@@ -13,22 +13,22 @@ public class TaskController {
     private TaskService taskService;
     @GetMapping("/{id}")
     Task get(@PathVariable int id) {
-        return taskService.findById(id);
+        return taskService.get(id);
     }
 
     @GetMapping
     Iterable<Task> get() {
-        return taskService.findAll();
+        return taskService.get();
     }
 
     @PostMapping
     void post(@RequestBody Task task) {
-        taskService.save(task);
+        taskService.post(task);
     }
 
     @PutMapping
     void put(@RequestBody Task task) {
-        taskService.save(task);
+        taskService.put(task);
     }
 
     @DeleteMapping("/{id}")
@@ -38,6 +38,6 @@ public class TaskController {
 
     @GetMapping("/find")
     Iterable<Task> find(@RequestParam String title) {
-        return taskService.findByTitleContaining(title);
+        return taskService.find(title);
     }
 }
