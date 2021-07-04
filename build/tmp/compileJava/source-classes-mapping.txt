@@ -1,2 +1,8 @@
+com/openwt/task/models/Task.java
+ com.openwt.task.models.Task
 com/openwt/task/TaskApplication.java
  com.openwt.task.TaskApplication
+com/openwt/task/repositories/TaskRepository.java
+ com.openwt.task.repositories.TaskRepository
+com/openwt/task/controllers/TaskController.java
+ com.openwt.task.controllers.TaskController
