@@ -11,14 +11,15 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class TaskApplicationTests {
-    @Value("${spring.dataSource.url}")
+    @Value("${spring.datasource.url}")
     private String dataSourceUrl;
 
     @Test
     void contextLoads() {
     }
+
     @Test
     public void test_dataSourceUrl() {
-        assertEquals(dataSourceUrl, "jdbc:mysql://localhost:3306/task_test");
+        assertEquals(dataSourceUrl, "jdbc:mysql://localhost:3306/task");
     }
 }

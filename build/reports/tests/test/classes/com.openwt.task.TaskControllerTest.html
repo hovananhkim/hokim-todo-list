@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TaskControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TaskControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.openwt.task.html">com.openwt.task</a> &gt; TaskControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.593s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getAllTask()</td>
+<td class="success">0.593s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>00:26:54.883 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:26:54.897 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:26:54.952 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.openwt.task.TaskControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+00:26:54.964 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.openwt.task.TaskControllerTest], using SpringBootContextLoader
+00:26:54.968 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.openwt.task.TaskControllerTest]: class path resource [com/openwt/task/TaskControllerTest-context.xml] does not exist
+00:26:54.969 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.openwt.task.TaskControllerTest]: class path resource [com/openwt/task/TaskControllerTestContext.groovy] does not exist
+00:26:54.970 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.openwt.task.TaskControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:26:54.971 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.openwt.task.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:26:55.062 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.openwt.task.TaskControllerTest]
+00:26:55.155 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/kimho/Task/build/classes/java/main/com/openwt/task/TaskApplication.class]
+00:26:55.157 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.openwt.task.TaskApplication for test class com.openwt.task.TaskControllerTest
+00:26:55.323 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.openwt.task.TaskControllerTest]: using defaults.
+00:26:55.324 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+00:26:55.348 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3ad3da9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@53ca4687, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1c6fb745, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d78b8f6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@57529a85, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56ad0096, org.springframework.test.context.transaction.TransactionalTestExecutionListener@37195099, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4fdef184, org.springframework.test.context.event.EventPublishingTestExecutionListener@c1bdc48, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@320cd4ed, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4fecd7ad, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@77865d05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@252d3621, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@71d225d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@58aac5fd]
+00:26:55.356 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1c3ac3c9 testClass = TaskControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@614f5e47 testClass = TaskControllerTest, locations = '{}', classes = '{class com.openwt.task.TaskApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@591cbb74, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@691f2625, [ImportsContextCustomizer@7e8cb7af key = [@org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.AutoConfigurationPackages$Registrar.class}), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.junit.jupiter.api.extension.ExtendWith(value={org.springframework.test.context.junit.jupiter.SpringExtension.class}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, printOnlyOnFailure=true, addFilters=true), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.AutoConfigurationImportSelector.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value=&quot;spring.test.mockmvc&quot;, skip=NO), @org.springframework.boot.autoconfigure.EnableAutoConfiguration(exclude={org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class}, excludeName={}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.junit.runner.RunWith(value=org.springframework.test.context.junit4.SpringRunner.class), @org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.boot.autoconfigure.AutoConfigurationPackage(basePackages={}, basePackageClasses={}), @org.apiguardian.api.API(consumers={&quot;*&quot;}, since=&quot;5.0&quot;, status=STABLE)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@72233697, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1dbe205d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ea63a15, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@11fc5af1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+00:26:55.405 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.2)
+
+2021-07-05 00:26:55.993  INFO 12585 --- [    Test worker] com.openwt.task.TaskControllerTest       : Starting TaskControllerTest using Java 11.0.11 on johnny with PID 12585 (started by kimho in /home/kimho/Task)
+2021-07-05 00:26:56.000  INFO 12585 --- [    Test worker] com.openwt.task.TaskControllerTest       : No active profile set, falling back to default profiles: default
+2021-07-05 00:26:57.322  INFO 12585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-05 00:26:57.393  INFO 12585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2021-07-05 00:26:58.584  INFO 12585 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-05 00:26:58.669  INFO 12585 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-05 00:26:58.907  INFO 12585 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-05 00:26:59.097  INFO 12585 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-05 00:26:59.607  INFO 12585 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-05 00:26:59.662  INFO 12585 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-05 00:27:00.752  INFO 12585 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-05 00:27:00.766  INFO 12585 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-05 00:27:01.804  WARN 12585 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-05 00:27:02.946  INFO 12585 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-07-05 00:27:02.946  INFO 12585 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-07-05 00:27:02.948  INFO 12585 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-07-05 00:27:02.977  INFO 12585 --- [    Test worker] com.openwt.task.TaskControllerTest       : Started TaskControllerTest in 7.563 seconds (JVM running for 9.291)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tasks
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.openwt.task.controllers.TaskController
+           Method = com.openwt.task.controllers.TaskController#get()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:5,&quot;title&quot;:&quot;Thu 2&quot;,&quot;detail&quot;:&quot;Di lam ca sang&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot;Thu 3&quot;,&quot;detail&quot;:&quot;Di lam ca chieu&quot;}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.0.2</a> at Jul 5, 2021, 12:27:03 AM</p>
+</div>
+</div>
+</body>
+</html>
