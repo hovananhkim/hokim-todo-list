@@ -1,5 +1,6 @@
 package com.openwt.task.models;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Generated;
@@ -10,8 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@Getter
-@Setter
+@Data
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

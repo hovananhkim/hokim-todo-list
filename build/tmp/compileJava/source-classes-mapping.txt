@@ -1,8 +1,17 @@
-com/openwt/task/models/Task.java
- com.openwt.task.models.Task
+com/openwt/task/exceptions/NotFoundException.java
+ com.openwt.task.exceptions.NotFoundException
 com/openwt/task/TaskApplication.java
  com.openwt.task.TaskApplication
 com/openwt/task/repositories/TaskRepository.java
  com.openwt.task.repositories.TaskRepository
+com/openwt/task/models/Task.java
+ com.openwt.task.models.Task
+com/openwt/task/exceptions/GlobalControllerExceptionHandler.java
+ com.openwt.task.exceptions.ErrorModel
+ com.openwt.task.exceptions.GlobalControllerExceptionHandler
+com/openwt/task/services/impl/TaskServiceImpl.java
+ com.openwt.task.services.impl.TaskServiceImpl
+com/openwt/task/services/TaskService.java
+ com.openwt.task.services.TaskService
 com/openwt/task/controllers/TaskController.java
  com.openwt.task.controllers.TaskController

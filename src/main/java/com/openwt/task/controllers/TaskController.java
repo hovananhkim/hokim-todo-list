@@ -1,45 +1,43 @@
 package com.openwt.task.controllers;
 
 import com.openwt.task.models.Task;
-import com.openwt.task.repositories.TaskRepository;
+import com.openwt.task.services.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
     @Autowired
-    private TaskRepository taskRepository;
-
+    private TaskService taskService;
     @GetMapping("/{id}")
-    Optional<Task> get(@PathVariable int id) {
-        return taskRepository.findById(id);
+    Task get(@PathVariable int id) {
+        return taskService.findById(id);
     }
 
     @GetMapping
     Iterable<Task> get() {
-        return taskRepository.findAll();
+        return taskService.findAll();
     }
 
     @PostMapping
     void post(@RequestBody Task task) {
-        taskRepository.save(task);
+        taskService.save(task);
     }
 
     @PutMapping
     void put(@RequestBody Task task) {
-        taskRepository.save(task);
+        taskService.save(task);
     }
 
     @DeleteMapping("/{id}")
     void delete(@PathVariable int id) {
-        taskRepository.deleteById(id);
+        taskService.delete(id);
     }
 
     @GetMapping("/find")
     Iterable<Task> find(@RequestParam String title) {
-        return taskRepository.findByTitleContaining(title);
+        return taskService.findByTitleContaining(title);
     }
 }
