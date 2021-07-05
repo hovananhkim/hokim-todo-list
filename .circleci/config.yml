@@ -35,7 +35,7 @@ jobs:
 
       # run tests!
       - run:
-          name: Running test
+          name: Running test in parallel
           command:
             cd src/test/java
             # Get list of classnames of tests that should run on this node
