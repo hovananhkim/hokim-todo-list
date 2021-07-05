@@ -1,2 +1,0 @@
-com/openwt/task/TaskApplication.java
- com.openwt.task.TaskApplication
