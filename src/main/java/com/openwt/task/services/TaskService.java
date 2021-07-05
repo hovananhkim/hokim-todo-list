@@ -13,5 +13,5 @@ public interface TaskService {
 
     void delete(int id);
 
-    Iterable<Task> find(String title);
+    Iterable<Task> search(String key);
 }

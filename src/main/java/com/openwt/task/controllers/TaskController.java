@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class TaskController {
     @Autowired
     private TaskService taskService;
+
     @GetMapping("/{id}")
     Task get(@PathVariable int id) {
         return taskService.get(id);
@@ -36,8 +37,8 @@ public class TaskController {
         taskService.delete(id);
     }
 
-    @GetMapping("/find")
-    Iterable<Task> find(@RequestParam String title) {
-        return taskService.find(title);
+    @GetMapping("/search")
+    Iterable<Task> find(@RequestParam String key) {
+        return taskService.search(key);
     }
 }

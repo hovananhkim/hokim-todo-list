@@ -48,7 +48,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public Iterable<Task> find(String title) {
-        return taskRepository.findByTitleContaining(title);
+    public Iterable<Task> search(String key) {
+        return taskRepository.findByTitleAndDetailContaining(key);
     }
 }
