@@ -1,6 +1,0 @@
-com/openwt/task/TaskRepositoryTest.java
- com.openwt.task.TaskRepositoryTest
-com/openwt/task/TaskApplicationTests.java
- com.openwt.task.TaskApplicationTests
-com/openwt/task/TaskControllerTest.java
- com.openwt.task.TaskControllerTest
