@@ -37,3 +37,12 @@ jobs:
       - run:
           name: Running test
           command: ./gradlew test
+      # Upload test coverage
+      - run:
+          name: Generate test coverage
+          command: gradle jacocoTestReport
+
+      # Upload test coverage
+      - run:
+          name: Upload test coverage
+          command: bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
