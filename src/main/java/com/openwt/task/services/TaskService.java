@@ -7,9 +7,9 @@ public interface TaskService {
 
     Iterable<Task> get();
 
-    void put(Task task);
+    Task put(Task task, int id);
 
-    void post(Task task);
+    Task post(Task task);
 
     void delete(int id);
 

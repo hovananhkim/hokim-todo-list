@@ -29,14 +29,21 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public void post(Task task) {
+    public Task post(Task task) {
+        if (taskRepository.findTask(task.getTitle(), task.getDetail())) {
+            return null;
+        }
         task.setId(0);
-        taskRepository.save(task);
+        return taskRepository.save(task);
     }
 
     @Override
-    public void put(Task task) {
-        taskRepository.save(task);
+    public Task put(Task task, int id) {
+        if (!taskRepository.existsById(id)){
+            return null;
+        }
+        task.setId(id);
+        return taskRepository.save(task);
     }
 
     @Override
@@ -48,7 +55,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public Iterable<Task> search(String key) {
-        return taskRepository.findByTitleAndDetailContaining(key);
+    public Iterable<Task> search(String keyword) {
+        return taskRepository.findByTitleAndDetailContaining(keyword);
     }
 }

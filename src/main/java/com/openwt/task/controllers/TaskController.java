@@ -23,13 +23,13 @@ public class TaskController {
     }
 
     @PostMapping
-    void post(@RequestBody Task task) {
-        taskService.post(task);
+    Task post(@RequestBody Task task) {
+        return taskService.post(task);
     }
 
-    @PutMapping
-    void put(@RequestBody Task task) {
-        taskService.put(task);
+    @PutMapping("/{id}")
+    Task put(@RequestBody Task task, @PathVariable int id) {
+        return taskService.put(task, id);
     }
 
     @DeleteMapping("/{id}")
@@ -38,7 +38,7 @@ public class TaskController {
     }
 
     @GetMapping("/search")
-    Iterable<Task> find(@RequestParam String key) {
-        return taskService.search(key);
+    Iterable<Task> search(@RequestParam String keyword) {
+        return taskService.search(keyword);
     }
 }
