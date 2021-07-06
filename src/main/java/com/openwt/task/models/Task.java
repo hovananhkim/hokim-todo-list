@@ -11,6 +11,7 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @RequiredArgsConstructor
 public class Task {
     @Id
@@ -26,4 +27,5 @@ public class Task {
     private String detail;
 
     private boolean status;
+
 }

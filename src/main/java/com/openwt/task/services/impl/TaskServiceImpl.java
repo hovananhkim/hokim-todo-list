@@ -30,32 +30,32 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Task post(Task task) {
-        if (taskRepository.findTask(task.getTitle(), task.getDetail())) {
-            return null;
-        }
+
         task.setId(0);
         return taskRepository.save(task);
     }
 
     @Override
     public Task put(Task task, int id) {
-        if (!taskRepository.existsById(id)){
-            return null;
-        }
+        checkNotFound(id);
         task.setId(id);
         return taskRepository.save(task);
     }
 
     @Override
     public void delete(int id) {
-        if (!taskRepository.existsById(id)) {
-            throw new NotFoundException(String.format("Task %d not found", id));
-        }
+        checkNotFound(id);
         taskRepository.deleteById(id);
     }
 
     @Override
     public Iterable<Task> search(String keyword) {
-        return taskRepository.findByTitleAndDetailContaining(keyword);
+        return taskRepository.findByTitleContainsOrDetailContains(keyword, keyword);
+    }
+
+    private void checkNotFound(int id) {
+        if (!taskRepository.existsById(id)) {
+            throw new NotFoundException(String.format("Task %d not found", id));
+        }
     }
 }
