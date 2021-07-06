@@ -9,7 +9,8 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
@@ -27,5 +28,4 @@ public class Task {
     private String detail;
 
     private boolean status;
-
 }

@@ -12,8 +12,6 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-//@TestPropertySource(locations = "classpath:application-test.yml")
-//@PropertySource(value = "classpath:application-test.yml")
 @TestPropertySource(properties = { "spring.config.location = classpath:application-test.yml" })
 class TaskApplicationTests {
     @Value("${spring.datasource.url}")

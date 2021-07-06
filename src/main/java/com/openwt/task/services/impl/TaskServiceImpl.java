@@ -30,7 +30,9 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Task post(Task task) {
-
+        if (taskRepository.findTask(task.getTitle(), task.getDetail())){
+            return null;
+        }
         task.setId(0);
         return taskRepository.save(task);
     }
